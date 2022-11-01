@@ -40,12 +40,26 @@
           </ul>
         </nav>
         <div class="contacts">
-          <a class="contacts__mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="contacts__phone" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <div class="contacts__container">
+            <svg class="contacts__icon">
+              <use href="./images/symbol-sprite.svg#icon-email"></use>
+            </svg>
+            <a
+              class="contacts__mail contacts__mail--header"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <div class="contacts__container">
+            <svg class="contacts__icon">
+              <use href="./images/symbol-sprite.svg#icon-smartphone"></use>
+            </svg>
+            <a
+              class="contacts__phone contacts__phone--header"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </div>
         </div>
       </div>
     </header>
