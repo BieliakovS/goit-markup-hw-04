@@ -164,8 +164,10 @@ ul {
   transition: 0.5s;
 }
 
-.contacts__container:hover > .contacts__icon,
-.contacts__container:focus > .contacts__icon {
+.contacts__mail--header:hover > .contacts__icon,
+.contacts__mail--header:focus > .contacts__icon,
+.contacts__phone--header:hover > .contacts__icon,
+.contacts__phone--header:focus > .contacts__icon {
   fill: var(--color-accent);
   transition: 0.5s;
 }
@@ -362,9 +364,9 @@ ul {
 }
 
 .socials__link {
-  display: block;
-  padding: 12px;
-  align-items: center;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
   transition: 0.5s;
@@ -383,8 +385,7 @@ ul {
 }
 
 .socials__icon {
-  align-items: center;
-
+  margin: auto;
   fill: var(--color-main-4);
   transition: 0.5s;
 }
@@ -448,7 +449,7 @@ ul {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -480,6 +481,7 @@ ul {
   color: var(--color-main-3-transparent);
   font-style: normal;
   font-weight: 400;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -528,9 +530,6 @@ ul {
 .filter-list__button:hover,
 .filter-list__button:focus,
 .filter-list__button:active {
-  padding-left: 25px;
-  padding-right: 25px;
-
   color: var(--color-main-3);
   background-color: var(--color-accent);
   box-shadow: 0px 3px 1px var(--color-additional-shadow-4),
